@@ -1,15 +1,16 @@
 #calc-contain {
   position: relative;
-  width: 300px;
+  width: 250px;
   border: 2px solid black;
   border-radius: 4px;
+  background-color: #dadada;
 }
 input[type=button] {
-  background-color: #b1995f;
+  background-color: #b9b9b9;
   width: 20%;
   font-size: 20px;
   font-weight: 700;
-  margin: 2%;
+  margin: 4px;
   border-radius: 4px;
 }
 input[name=answer] {
@@ -20,4 +21,5 @@ input[name=answer] {
   padding-top: 2px;
   font-size: 16px;
   border: 1px solid black;
+  border-radius: 4px;
 }
