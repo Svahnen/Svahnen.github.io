@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
 
-<link href="style.css" rel="stylesheet">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="shortcut icon" href="octo.png">
+  <link rel="stylesheet" href="style/loginstyle.css">
+  <link rel="stylesheet" href="style/hamburger.css">
+  <link rel="stylesheet" href="style/mainstyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Document</title>
 </head>
 
 <body>
-
-<h2>Calculator</h2>
-
-  <div id="calc-contain">
-      <form name="calculator">
-          <input type="text" name="answer"/>
-          <br />
-          <input type="button" value=" 1 " onclick="button (1)" />
-          <input type="button" value=" 2 " onclick="button (2)" />
-          <input type="button" value=" 3 " onclick="button (3)" />
-          <input type="button" value=" + " onclick="button ('+')" />
-          <br />
-          <input type="button" value=" 4 " onclick="button (4)" />
-          <input type="button" value=" 5 " onclick="button (5)" />
-          <input type="button" value=" 6 " onclick="button (6)" />
-          <input type="button" value=" - " onclick="button ('-')" />
-          <br />
-          <input type="button" value=" 7 " onclick="button (7)" />
-          <input type="button" value=" 8 " onclick="button (8)" />
-          <input type="button" value=" 9 " onclick="button (9)" />
-          <input type="button" value=" x " onclick="button ('*')" />
-          <br />
-          <input type="button" value=" c " onclick="clearAnswer ()" />
-          <input type="button" value=" 0 " onclick="button (0)" />
-          <input type="button" value=" = " onclick="evalAnswer ()" />
-          <input type="button" value=" / " onclick="button ('/')" />
-          <br />
-        <form>
-  </div>
-
-<script src="calculator.js"></script>
+	<div class="content">
+		<header>
+			<nav class="longnav">
+				<ul id="nav">
+					<li class="nav"><a href="pages/why.html">Varför KYH?</a></li>
+					<li class="nav"><a href="pages/utbildningar.html">Utbildningar</a></li>
+					<li class="nav"><a href="pages/about.html">Om oss</a></li>
+					<li class="nav"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
+				</ul>
+			</nav>
+			<nav id="hamburger">
+				<div id="burgerclick">
+					<div id="burgerline1" class="burgericon"></div>
+					<div id="burgerline2" class="burgericon"></div>
+					<div id="burgerline3" class="burgericon"></div>
+					<div id="hamburgerbackground"></div>
+				</div>
+				<div id="hamburgermenu">
+					<ul id="nav2">
+						<li class="nav2"><a href="pages/why.html">Varför KYH?</a></li>
+						<li class="nav2"><a href="pages/utbildningar.html">Utbildningar</a></li>
+						<li class="nav2"><a href="pages/about.html">Om oss</a></li>
+						<li class="nav2"><button type="button" name="loginbutton" onclick=showLogin()>logga in</button></li>
+					</ul>
+				</div>
+			</nav>
+			<a href="index.html">
+				<h1>Octo Group</h1>
+			</a>
+		</header>
+		<div id="container"></div>
+		<main>
+			<!--Loginbox-starts-->
+			<div id="loginbox">
+				<form name="login" action="#" class="modal-content">
+					<div class="inputcontainer">
+						<label><b>Användarnamn</b></label>
+						<img id="userimg" src="img/octoedu.png" alt="">
+						<input id="unameinput" type="text" placeholder="Användarnamn" required>
+						<label><b>Lösenord</b></label>
+						<img id="userimg" src="img/lock.png" alt="">
+						<input id="pswinput" type="password" placeholder="Lösenord" required>
+						<!--button type="button" onclick="document.getElementById('loginbox').style.display='none'" class="cancelbtn">X</button-->
+					</div>
+					<div class="lgcontainer">
+						<button id="loginbutton" type="submit" onclick="accesslevel(this.form); return false;">Logga in</button>
+						<p id="errortxt">Fel lösenord eller <br> användarnamn.
+						</p>
+					</div>
+				</form>
+			</div>
+			<!--Loginbox-ends-->
+			<h2>Om portalen</h2>
+			<p>Välkommen till KYHs LMS portal.</p>
+			<p>Här kan du se nyheter, information om kurser och betyg.</p>
+		</main>
+	</div>
+	<footer class="footer">
+		<p>&copy;2017</p>
+	</footer>
+	<script type="text/javascript" src="javascript/openmenu.js"></script>
+	<script type="text/javascript" src="javascript/login.js"></script>
 </body>
+
 </html>
