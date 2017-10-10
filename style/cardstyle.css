@@ -1,4 +1,4 @@
-main > .box {
+main>.box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -6,14 +6,14 @@ main > .box {
   margin: 0 auto;
 }
 
-main > .box > h1 {
+main>.box>h1 {
   display: flex;
   justify-content: center;
   flex: 100%;
 }
 
-.box > .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.box>.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 200px;
   height: 250px;
@@ -22,20 +22,20 @@ main > .box > h1 {
   border: solid 1px grey;
 }
 
-.box > .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.box>.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cardcontainer > h2 {
+.cardcontainer>h2 {
   text-align: center;
   text-decoration: underline #777A68;
   margin: 10px;
 }
 
-.cardcontainer > ul {
+.cardcontainer>ul {
   text-align: center;
   margin: 10px;
-  list-style-position:inside;
+  list-style-position: inside;
 }
 
 #dfbbutton {

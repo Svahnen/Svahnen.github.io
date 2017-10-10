@@ -6,13 +6,11 @@ document.getElementById("hamburgermenu").style.visibility = "hidden"
 burgermenu.onclick = function() {
 
 
-if(document.getElementById("hamburgermenu").style.visibility == "hidden") {
+  if (document.getElementById("hamburgermenu").style.visibility == "hidden") {
 
     document.getElementById("hamburgermenu").style.visibility = "visible";
-}
-
-else {
+  } else {
     document.getElementById("hamburgermenu").style.visibility = "hidden"
 
-}
+  }
 };

@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.aroundrange > p {
+.aroundrange>p {
   font-size: 10px;
   padding-top: 6px;
 }

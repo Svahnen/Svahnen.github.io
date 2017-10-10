@@ -1,7 +1,6 @@
-
 // Stäng loginbox om användaren klickar utanför
 window.onclick = function(event) {
-	modal = document.getElementById('loginbox');
+  modal = document.getElementById('loginbox');
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -46,5 +45,5 @@ function accesslevelroot(form) {
 }
 
 function logOut() {
-	window.open('../index.html', '_self')
+  window.open('../index.html', '_self')
 }
