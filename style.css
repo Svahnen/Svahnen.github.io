@@ -1,3 +1,42 @@
+.formcontent {
+  display: flex;
+  font-family: 'Kalam';
+  font-size: 18px;
+}
+
+.forms {
+  margin: 0 auto;
+  position: relative;
+}
+
+#close {
+  display: none;
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+#submit {
+  background-color: #4CAF50;
+  border: 0;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  border-radius: 20px;
+}
+
 input {
+  display: none;
+}
+
+textarea {
+  resize: none;
   display: none;
 }
