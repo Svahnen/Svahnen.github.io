@@ -28,6 +28,7 @@ let reset = function(){
     this["t"+i].required = false;
     this["i"+i].style.display ="none";
     this["i"+i].style.type ="text";
+    this["i"+i].required = false;
     sB.style.display = "none";
     cB.style.display = "none";
   }
