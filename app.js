@@ -73,9 +73,9 @@ document.getElementById('feedback').onclick = function() {
 document.getElementById('weekeval').onclick = function() {
   reset();
   cB.style.display = "inherit";
-  p1.innerHTML = "Ditt namn (frivilligt)";
+  p1.innerHTML = "Ditt namn (frivilligt):";
   t1.style.display = "inherit";
-  t1.style.width = "350px";
+  t1.style.width = "200px";
   p2.innerHTML = "Hur upplever du arbetsmiljön?";
   i2.style.display = "inherit";
   i2.type = "range";
