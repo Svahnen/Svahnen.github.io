@@ -86,5 +86,4 @@ document.getElementById('weekeval').onclick = function() {
   t4.style.display = "inherit";
   t4.style.height = "150px";
   t4.style.width = "400px";
-  t4.required = true;
 };
