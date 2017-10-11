@@ -18,17 +18,17 @@ let sB = document.getElementById("submit");
 let cB = document.getElementById("close");
 
 // Reset function for the close button and for use on the first line of each form function
-let reset = function(){
-  for(i = 1; i <= 5; i++) {
-    this["p"+i].innerHTML ="";
-    this["t"+i].style.display ="none";
-    this["t"+i].style.height = "auto";
-    this["t"+i].style.width = "auto";
-    this["t"+i].value="";
-    this["t"+i].required = false;
-    this["i"+i].style.display ="none";
-    this["i"+i].style.type ="text";
-    this["i"+i].required = false;
+let reset = function() {
+  for (i = 1; i <= 5; i++) {
+    this["p" + i].innerHTML = "";
+    this["t" + i].style.display = "none";
+    this["t" + i].style.height = "auto";
+    this["t" + i].style.width = "auto";
+    this["t" + i].value = "";
+    this["t" + i].required = false;
+    this["i" + i].style.display = "none";
+    this["i" + i].style.type = "text";
+    this["i" + i].required = false;
     sB.style.display = "none";
     cB.style.display = "none";
   }
