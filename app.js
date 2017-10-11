@@ -83,9 +83,9 @@ document.getElementById('weekeval').onclick = function() {
   i3.style.display = "inherit";
   i3.type = "range";
   i3.style.width = "350px";
-  sB.style.display = "inherit";
   p4.innerHTML = "Förslag på förbättringar:";
   t4.style.display = "inherit";
   t4.style.height = "150px";
   t4.style.width = "350px";
+  sB.style.display = "inherit";
 };
