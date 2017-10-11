@@ -43,11 +43,11 @@
   background: #46a24a;
 }
 
-input {
+#form > input {
   display: none;
 }
 
-textarea {
+#form > textarea {
   resize: none;
   display: none;
   border-radius: 5px;
