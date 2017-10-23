@@ -1,34 +1,39 @@
+/* eslint no-undef: 0 */
+/* eslint no-unused-vars: 0 */
+/* eslint-env browser */
+
 // Set variebles for each id
-let p1 = document.getElementById('p1')
-let p2 = document.getElementById('p2')
-let p3 = document.getElementById('p3')
-let p4 = document.getElementById('p4')
-let p5 = document.getElementById('p5')
-let t1 = document.getElementById('t1')
-let t2 = document.getElementById('t2')
-let t3 = document.getElementById('t3')
-let t4 = document.getElementById('t4')
-let t5 = document.getElementById('t5')
-let i1 = document.getElementById('i1')
-let i2 = document.getElementById('i2')
-let i3 = document.getElementById('i3')
-let i4 = document.getElementById('i4')
-let i5 = document.getElementById('i5')
-let sB = document.getElementById('submit')
-let cB = document.getElementById('close')
+let p1 = document.getElementsByClassName('p1')[0]
+let p2 = document.getElementsByClassName('p2')[0]
+let p3 = document.getElementsByClassName('p3')[0]
+let p4 = document.getElementsByClassName('p4')[0]
+let p5 = document.getElementsByClassName('p5')[0]
+let t1 = document.getElementsByClassName('t1')[0]
+let t2 = document.getElementsByClassName('t2')[0]
+let t3 = document.getElementsByClassName('t3')[0]
+let t4 = document.getElementsByClassName('t4')[0]
+let t5 = document.getElementsByClassName('t5')[0]
+let i1 = document.getElementsByClassName('i1')[0]
+let i2 = document.getElementsByClassName('i2')[0]
+let i3 = document.getElementsByClassName('i3')[0]
+let i4 = document.getElementsByClassName('i4')[0]
+let i5 = document.getElementsByClassName('i5')[0]
+let sB = document.getElementsByClassName('submit')[0]
+let cB = document.getElementsByClassName('close')[0]
 
 // Reset function for the close button and for use on the first line of each form function
-let reset = function () {
+let reset = function (form) {
   for (let i = 1; i <= 5; i++) {
-    this['p' + i].innerHTML = ''
-    this['t' + i].style.display = 'none'
-    this['t' + i].style.height = 'auto'
-    this['t' + i].style.width = 'auto'
-    this['t' + i].value = ''
-    this['t' + i].required = false
-    this['i' + i].style.display = 'none'
-    this['i' + i].style.type = 'text'
-    this['i' + i].required = false
+    console.log(this['p' + i])
+    form['p' + i].innerHTML = ''
+    form['t' + i].style.display = 'none'
+    form['t' + i].style.height = 'auto'
+    form['t' + i].style.width = 'auto'
+    form['t' + i].value = ''
+    form['t' + i].required = false
+    form['i' + i].style.display = 'none'
+    form['i' + i].style.type = 'text'
+    form['i' + i].required = false
     sB.style.display = 'none'
     cB.style.display = 'none'
   }
@@ -40,13 +45,13 @@ let sent = function () {
 }
 
 // Close button
-document.getElementById('close').onclick = function () {
-  reset()
+document.getElementsByClassName('close')[0].onclick = function () {
+  reset(this)
 }
 
 // After this line comes all the form functions
-document.getElementById('news').onclick = function () {
-  reset()
+document.getElementsByClassName('news')[0].onclick = function () {
+  // reset()
   cB.style.display = 'inherit'
   p1.innerHTML = 'Dagens nyheter är:'
   t1.style.display = 'inherit'
@@ -56,8 +61,8 @@ document.getElementById('news').onclick = function () {
   sB.style.display = 'inherit'
 }
 
-document.getElementById('feedback').onclick = function () {
-  reset()
+document.getElementsByClassName('feedback')[0].onclick = function () {
+  // reset()
   cB.style.display = 'inherit'
   p1.innerHTML = 'Vad har varit bra/dåligt under dagen?'
   t1.style.display = 'inherit'
@@ -70,8 +75,8 @@ document.getElementById('feedback').onclick = function () {
   sB.style.display = 'inherit'
 }
 
-document.getElementById('weekeval').onclick = function () {
-  reset()
+document.getElementsByClassName('weekeval')[0].onclick = function () {
+  // reset()
   cB.style.display = 'inherit'
   p1.innerHTML = 'Ditt namn (frivilligt):'
   t1.style.display = 'inherit'

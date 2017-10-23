@@ -9,7 +9,7 @@
   position: relative;
 }
 
-#close {
+.close {
   display: none;
   background: #ff0000;
   color: white;
@@ -20,12 +20,12 @@
   right: 0;
 }
 
-#close:hover {
+.close:hover {
   box-shadow: 2px 2px 2px #888888;
   background: #d50000;
 }
 
-#submit {
+.submit {
   background: #4CAF50;
   border: 0;
   color: white;
@@ -38,16 +38,16 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-#submit:hover {
+.submit:hover {
   box-shadow: 2px 2px 2px #888888;
   background: #46a24a;
 }
 
-#form > input {
+.form > input {
   display: none;
 }
 
-#form > textarea {
+.form > textarea {
   resize: none;
   display: none;
   border-radius: 5px;
