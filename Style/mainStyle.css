@@ -3,7 +3,7 @@ html, body {
 }
 
 #cover {
-  background: #222 url('../img/old-cover.jpeg') no-repeat center;
+  background: #222 url('../Img/old-cover.jpeg') no-repeat center;
   background-size: cover;
   color: white;
   height: 100%;
