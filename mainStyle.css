@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+#cover {
+  background: #222 url('../img/old-cover.jpeg') no-repeat center;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+#cover-caption {
+  width: 100%;
+}
+
+.customButton {
+  border: solid 1px white;
+  text-decoration: none;
+  color: white;
+}
