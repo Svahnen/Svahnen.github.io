@@ -2,6 +2,10 @@ html, body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 #cover {
   background: #222 url('../Img/old-cover.jpeg') no-repeat center;
   background-size: cover;
@@ -14,10 +18,4 @@ html, body {
 
 #cover-caption {
   width: 100%;
-}
-
-.customButton {
-  border: solid 1px white;
-  text-decoration: none;
-  color: white;
 }
