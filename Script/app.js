@@ -18,7 +18,6 @@ window.onscroll = function () {
 setInterval(function () {
   if (didScroll) {
     didScroll = false
-    console.log('You scrolled')
     navTop()
   }
 }, 50)
