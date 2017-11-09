@@ -1,7 +1,24 @@
-window.onscroll = function () {
-  if (window.scrollY >= window.innerHeight)
-  document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top'
-  else {
+// Make function for setting nav to fixed-top
+let navTop = function () {
+  if (window.scrollY >= window.innerHeight) {
+    document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top'
+  } else {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark'
   }
 }
+
+// See if user is scrolling
+let didScroll = false
+
+window.onscroll = function () {
+  didScroll = true
+}
+
+// If user is scrolling run navTop() every 50ms
+setInterval(function () {
+  if (didScroll) {
+    didScroll = false
+    console.log('You scrolled')
+    navTop()
+  }
+}, 50)
