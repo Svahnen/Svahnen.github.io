@@ -2,8 +2,10 @@
 let navTop = function () {
   if (window.scrollY >= window.innerHeight) {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top'
+    document.getElementById('carousel').style.paddingTop = '56px'
   } else {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark'
+    document.getElementById('carousel').style.paddingTop = '0'
   }
 }
 

@@ -27,7 +27,11 @@ img {
   padding: 2.5rem 0;
 }
 
-#nav-main {
-  margin-bottom: -56px;
+/*#nav-main {
+  margin-top: -56px;
   z-index: 100;
+}*/
+
+#carousel{
+  background: #353a40;
 }
