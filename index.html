@@ -44,9 +44,10 @@
       <form class="form-inline my-2 my-lg-0">
         <input id="searchPage" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 
-          <!-- Håller på att försöka få chromes inbyggda sök fubnktion att triggas av fomruläret -->
+          <!-- när man trycker enter i search rutan så laddas sidan om,
+        men knappen funkar när den har type button -->
 
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="findOnPage()">Search</button>
+        <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="findOnPage()">Search</button>
       </form>
     </div>
   </nav>
