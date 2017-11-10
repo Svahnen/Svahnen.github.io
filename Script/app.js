@@ -4,11 +4,11 @@ let navTop = function () {
   if (window.scrollY >= window.innerHeight) {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top'
     document.getElementById('carousel').style.paddingTop = '56px'
-    document.getElementById('carousel').style.background = 'linear-gradient(#353a40 56px,#fff 0%)'
+    document.getElementById('carousel').style.background = 'linear-gradient(rgb(53, 58, 64) 56px, rgba(255, 255, 255, 0) 0%)'
   } else {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark'
     document.getElementById('carousel').style.paddingTop = '0'
-    document.getElementById('carousel').style.background = '#fff'
+    document.getElementById('carousel').style.background = 'rgba(255, 255, 255, 0)'
   }
 }
 
