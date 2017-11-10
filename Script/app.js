@@ -1,3 +1,7 @@
+/* eslint no-undef: 0 */
+/* eslint no-unused-vars: 0 */
+/* eslint-env browser */
+
 // Make function for setting nav to fixed-top, and set paddingTop to the carousel
 // aswell as setting the padded area to the same color as the navbar.
 let navTop = function () {
@@ -26,3 +30,13 @@ setInterval(function () {
     navTop()
   }
 }, 50)
+
+// Take in the string that is typed into the search-box
+let searchString = function () {
+  return document.getElementById('searchPage').value
+}
+
+// Search on the same page for the string from searchString function
+let findOnPage = function () {
+  window.find(searchString())
+}
