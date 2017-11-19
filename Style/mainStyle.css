@@ -26,3 +26,17 @@ img {
   font-size: 0.8rem;
   padding: 2.5rem 0;
 }
+
+.custom-iframe {
+  max-width: 600px;
+  border: solid 1px black;
+}
+
+.custom-iframe2 {
+  height: 1000px;
+}
+
+#about-carousel {
+  border-bottom: solid 1px silver;
+  margin-bottom: 50px;
+}
