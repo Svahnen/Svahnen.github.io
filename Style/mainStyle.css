@@ -1,31 +1,31 @@
 html, body {
-  height: 100%;
   background: #f1f1f1;
+  height: 100%;
 }
 
 img {
   max-width: 100%;
 }
 
-#cover {
+.cover {
+  align-items: center;
   background: #222 url('../Img/old-cover.jpeg') no-repeat center;
   background-size: cover;
   color: white;
+  display: flex;
   height: 100%;
   text-align: center;
-  align-items: center;
-  display: flex;
 }
 
-#cover-caption {
+.cover-caption {
   width: 100%;
 }
 
-#what-i-do{
+.what-i-do{
   padding-bottom: 50px;
 }
 
-#footer-main {
+.footer-main {
   background: #222;
   color: white;
   font-size: 0.8rem;

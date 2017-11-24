@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="Style/mainStyle.css"> </head>
 
 <body>
-  <section id="cover">
-    <div id="cover-caption">
+  <section class="cover">
+    <div class="cover-caption">
       <div class="container">
         <div class="col-sm-12">
           <h1>Hi, I'm Svahnen. <br> I study to become a Front End Developer.</h1>
@@ -18,21 +18,21 @@
       </div>
     </div>
   </section>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-main"> <a class="navbar-brand" href="#">Made by Svahnen</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-main" id="nav-main"><a class="navbar-brand" href="#">Made by Svahnen</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"> <a class="nav-link" href="#">Cover</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#carousel">Preview</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#what-i-do">About me</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#about-me">About me</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#preview">Preview</a> </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0"> <input id="searchPage" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <!-- Problem!!! när man trycker enter i search rutan så laddas sidan om,
-        men knappen funkar när den har type button ----><button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="findOnPage()">Search</button> </form>
+      <form class="form-inline my-2 my-lg-0"> <input class="searchPage form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <!-- BUG: Problem!!! när man trycker enter i search rutan så laddas sidan om,
+        men knappen funkar när den har type button ----><button class="searchButton btn btn-outline-success my-2 my-sm-0" type="button" onclick="findOnPage()">Search</button> </form>
     </div>
   </nav>
-  <section id="what-i-do">
+  <section class="what-i-do" id="about-me">
     <div class="section-content">
       <div class="container">
         <h2>About me</h2>
@@ -46,7 +46,7 @@
       </div>
     </div>
   </section>
-  <section id="cards">
+  <section class="cards" id="preview">
   <div class="container">
       <div class="row justify-content-around">
         <div class="col-4">
@@ -84,7 +84,7 @@
       </div>
   </div>
 </section>
-  <footer id="footer-main">
+  <footer class="footer-main">
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
@@ -92,9 +92,9 @@
         </div>
         <div class="col-sm-3">
           <ul class="list-unstyled">
-            <li><a href="">Cover</a></li>
-            <li><a href="">Preview</a></li>
-            <li><a href="">About me</a></li>
+            <li><a href="#">Cover</a></li>
+            <li><a href="#preview">Preview</a></li>
+            <li><a href="#about-me">About me</a></li>
           </ul>
         </div>
         <div class="col-sm-3">

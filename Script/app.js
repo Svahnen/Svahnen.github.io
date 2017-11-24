@@ -7,12 +7,12 @@
 let navTop = function () {
   if (window.scrollY >= window.innerHeight) {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark fixed-top'
-    document.getElementById('what-i-do').style.paddingTop = '106px'
-    document.getElementById('what-i-do').style.background = 'linear-gradient(rgb(53, 58, 64) 56px, rgba(255, 255, 255, 0) 0%)'
+    document.getElementById('about-me').style.paddingTop = '106px'
+    document.getElementById('about-me').style.background = 'linear-gradient(rgb(53, 58, 64) 56px, rgba(255, 255, 255, 0) 0%)'
   } else {
     document.getElementById('nav-main').className = 'navbar navbar-expand-lg navbar-dark bg-dark'
-    document.getElementById('what-i-do').style.paddingTop = '50px'
-    document.getElementById('what-i-do').style.background = 'rgba(255, 255, 255, 0)'
+    document.getElementById('about-me').style.paddingTop = '50px'
+    document.getElementById('about-me').style.background = 'rgba(255, 255, 255, 0)'
   }
 }
 
