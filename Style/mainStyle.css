@@ -31,3 +31,10 @@ img {
   font-size: 0.8rem;
   padding: 2.5rem 0;
 }
+
+@media (min-width: 600px) {
+  .cards .card {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
